@@ -18,7 +18,8 @@
     "node": ">=18"
   },
   "scripts": {
-    "build": "ncc build src/index.ts -o lib -m && mv lib/index.js lib/index.mjs",
+    "build": "ncc build src/index.ts -o lib -m && node scripts/rename-build-output.mjs",
+    "generate:site": "node --loader ts-node/esm scripts/generate-site.ts",
     "lint": "eslint . --fix",
     "postinstall": "simple-git-hooks"
   },

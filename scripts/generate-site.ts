@@ -1,6 +1,6 @@
 /**
  * Tech Trending Daily - Static Site Generator
- * Run with: npx ts-node scripts/generate-site.ts
+ * Run with: pnpm run generate:site
  * 
  * Fetches trending data from all platforms and generates a beautiful static HTML page.
  */
